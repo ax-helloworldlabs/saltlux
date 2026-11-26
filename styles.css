@@ -204,7 +204,8 @@ summary:hover { background: #ebf2f7; }
 
 /* 04 Resources */
 .resources-section { background: var(--band); }
-.resource-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.resource-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.resource-grid.two { grid-template-columns: repeat(2, 1fr); }
 .resource-card { display: flex; flex-direction: column; background: #fff; padding: 26px; border: 1px solid var(--line); border-radius: 8px; transition: transform .2s, border-color .2s; }
 .resource-card:hover { transform: translateY(-4px); border-color: #7da4bc; }
 .resource-type { font-size: 12px; font-weight: 700; color: #557489; letter-spacing: .08em; }
@@ -243,7 +244,7 @@ footer { background: var(--cream); }
 .login-hint { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
 
 @media (max-width: 1000px) {
-  .resource-grid { grid-template-columns: repeat(2, 1fr); }
+  .resource-grid { grid-template-columns: repeat(3, 1fr); }
   .wrap { padding-left: 28px; padding-right: 28px; }
   .hero-grid { gap: 24px; grid-template-columns: 1.15fr 1fr; }
   .work-visual { height: auto; aspect-ratio: 4 / 3; }
@@ -325,7 +326,7 @@ footer { background: var(--cream); }
   .lunch-break > span:last-child { margin-left: 0; width: 100%; }
   .outcome { grid-template-columns: 1fr; padding: 26px 22px; gap: 16px; margin-top: 32px; }
   .outcome h3 { font-size: 21px; }
-  .resource-grid { grid-template-columns: 1fr; gap: 12px; }
+  .resource-grid, .resource-grid.two { grid-template-columns: 1fr; gap: 12px; }
   .resource-card { padding: 22px; }
   .resource-card h3 { margin-top: 10px; font-size: 20px; }
   .resource-bottom { margin-top: 16px; padding-top: 12px; }
